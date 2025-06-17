@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgba(207, 94, 182, 1),rgba(141, 35, 217, 1));
+    height: 100vh;
+}
+body div{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+}
+a{
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(47, 214, 108, 1);
+}
