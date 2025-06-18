@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(207, 94, 182, 1),rgba(141, 35, 217, 1));
+}
+header{
+    display: flex;
+}
+h1{
+    color: white;
+}

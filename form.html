@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>TaskForm</title>
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <header>
@@ -11,7 +12,17 @@
             <img src="image/material-symbols--menu-rounded.svg" alt="">
         </header>
         <main>
-            
+            <form action="">
+                <input id="taskTitle" type="text" placeholder="Title"> 
+                <input id="taskDescription" type="text" placeholder="Description">
+                <select name="" id="">
+                    <option value="" disabled selected>Choose a priority</option>
+                    <option value="">basse</option>
+                    <option value="">moyenne</option>
+                    <option value="">haute</option>
+                </select>  
+                <button>Add</button>
+            </form>
         </main>
     </body>
 </html>
