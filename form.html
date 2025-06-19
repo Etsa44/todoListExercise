@@ -8,8 +8,12 @@
     </head>
     <body>
         <header>
-            <h1>Task</h1>
-            <img src="image/material-symbols--menu-rounded.svg" alt="">
+            <a href="index.html">
+                <h1>Task</h1>
+            </a>
+            <a href="#">
+                <img src="image/material-symbols--menu-rounded.svg" alt="">
+            </a>
         </header>
         <main>
             <form action="">
@@ -17,12 +21,13 @@
                 <input id="taskDescription" type="text" placeholder="Description">
                 <select name="" id="">
                     <option value="" disabled selected>Choose a priority</option>
-                    <option value="">basse</option>
-                    <option value="">moyenne</option>
-                    <option value="">haute</option>
+                    <option value="Low">Low</option>
+                    <option value="Average">Average</option>
+                    <option value="high">high</option>
                 </select>  
-                <button>Add</button>
+                <button type="submit">Add</button>
             </form>
+            
         </main>
     </body>
 </html>
