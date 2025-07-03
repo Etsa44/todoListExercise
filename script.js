@@ -1,6 +1,8 @@
 // j'appelle mon bouton depuis mon html
 const button = document.getElementById("myButton")
 const tbody = document.getElementById("tbody")
+// cette variable sert initialiser le compteur
+let counter = 1;
 // fonction pour recuperer les donnees 
 function getValue(){
     // ces deux ligne permettent de rendre mon tabeau visible
@@ -16,13 +18,23 @@ function getValue(){
     const getPriority = document.getElementById("taskPriority").value
     // creation de container pour afficher les donnees et insertion des donnees
     const tr = document.createElement("tr")
+    // creation du coumpteur
+    tr.id = "element-" + counter;
+    const idContenair = document.createElement("td")
+    idContenair.textContent = counter
+    idContenair.style.color = "white"
+    counter++;
     const titleContenair = document.createElement("td")
     titleContenair.textContent = getTitle
+    titleContenair.style.color = "white"
     const descriptionContenair = document.createElement("td")
     descriptionContenair.textContent = getDescription
+    descriptionContenair.style.color = "white"
     const priorityContenair = document.createElement("td")
     priorityContenair.textContent = getPriority
+    priorityContenair.style.color = "white"
     // imbrication de contenaire
+    tr.appendChild(idContenair)
     tr.appendChild(titleContenair)
     tr.appendChild(descriptionContenair)
     tr.appendChild(priorityContenair)
